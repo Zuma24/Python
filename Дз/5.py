@@ -5,21 +5,21 @@
 # Вывод
 # 4
 
-# s = input("Введите выражение: ")
-# sum = 0
-# if s[0] == "-":
-#     sum = int(s[1])*(-1)
-# elif s[0] == "+":
-#     sum = int(s[1])
-# else:
-#     sum = int(s[0])
-#
-# for i in range(len(s)):
-#     if s[i] == "-":
-#         sum -= int(s[i+1])
-#     if s[i] == "+":
-#         sum += int(s[i+1])
-# print(f"Ответ: {sum}")
+s = input("Введите выражение: ")
+sum = 0
+if s[0] == "-":
+    sum = int(s[1])*(-1)
+elif s[0] == "+":
+    sum = int(s[1])
+else:
+    sum = int(s[0])
+
+for i in range(len(s)):
+    if s[i] == "-":
+        sum -= int(s[i+1])
+    if s[i] == "+":
+        sum += int(s[i+1])
+print(f"Ответ: {sum}")
 
 
 # Задача 2
@@ -50,10 +50,10 @@
 
 # Метод строк? Это же не он?
 
-# s = input("Введите текст: \n").split()
-# print(type(s))
-# for i in range(len(s)):
-#     print(s[i])
+s = input("Введите текст: \n").split()
+print(type(s))
+for i in range(len(s)):
+    print(s[i])
 
 # НЕОБЯЗАТЕЛЬНЫЕ РЕШАЮ
 # Задача 26:
@@ -63,16 +63,16 @@
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
 
-# def exponentiation(a, b):
-#     e = a
-#     for _ in range(b-1):
-#         e = e*a
-#     return e
-#
-# a = int(input("Введите число: "))
-# b = int(input("Введите число: "))
-# expo = exponentiation(a, b)
-# print(expo)
+def exponentiation(a, b):
+    e = a
+    for _ in range(b-1):
+        e = e*a
+    return e
+
+a = int(input("Введите число: "))
+b = int(input("Введите число: "))
+expo = exponentiation(a, b)
+print(expo)
 
 
 # Задача 28:
