@@ -92,9 +92,11 @@ print(expo)
 # 2 2
 # 4
 # Не поняла задания (6-_- )
+
 def sum(a, b):
     sum = a + b
     return sum
 a = int(input("Введите число: "))
 b = int(input("Введите число: "))
 print(sum(a, b))
+
