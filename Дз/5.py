@@ -48,21 +48,22 @@ print(f"Ответ: {sum}")
 # the
 # Highland
 
-
 # s = input("Введите текст: \n").split() # Метод split
 # print(type(s))
 # for i in range(len(s)):
 #     print(s[i])
 
 s = input("Введите текст: \n")
-print(type(s))
-str = ""
-for i in range(int(len(s))):
-    if s[i] != " ":
-        str += s[i]
-    else:
-        str = str + "\n" # пхпхпхпх странно, но вышло
-print(str)
+print(*s.split(), sep="\n")
+
+# print(type(s))
+# str = ""
+# for i in range(int(len(s))):
+#     if s[i] != " ":
+#         str += s[i]
+#     else:
+#         str += "\n"
+# print(str)
 
 # НЕОБЯЗАТЕЛЬНЫЕ РЕШАЮ
 # Задача 26:
