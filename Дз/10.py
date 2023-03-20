@@ -91,6 +91,18 @@ data = pd.DataFrame({'whoAmI': lst})
 data.head() |
 """
 
+import pandas as pd
+lst = ['robot'] * 10
+lst += ['human'] * 10
+rn.shuffle(lst)
+data = pd.DataFrame({'whoAmI': lst})
+data
+
+data['whoAmI'].value_counts
+nums = {'whoAmI': {'robot': 0, 'human': 1}}
+data = data.replace(nums)
+data
+
 import random
 lst = ['robot'] * 10
 lst += ['human'] * 10
@@ -99,14 +111,15 @@ data = pd.DataFrame({'whoAmI': lst})
 pd.get_dummies(data, columns=['whoAmI'], drop_first= True)
 
 import pandas as pd
-d = pd.DataFrame(random.sample(['1', '0']*10, 20) ,columns={'whoAmI'})
-d
-
-import random as rn
-import pandas as pd
 lst = ['robot'] * 10
 lst += ['human'] * 10
 rn.shuffle(lst)
 data = pd.DataFrame({'whoAmI': lst})
-data.head()
-# pd.drop(['whoAmI'],axis=1, inplace=True)
+data['whoAmI'].value_counts
+nums = {'whoAmI': {'robot': 0, 'human': 1}}
+data = data.replace(nums)
+data
+
+import pandas as pd
+d = pd.DataFrame(random.sample(['1', '0']*10, 20) ,columns={'whoAmI'})
+d
