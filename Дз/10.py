@@ -92,7 +92,6 @@ data.head() |
 """
 
 import random
-from sklearn.preprocessing import OneHotEncoder
 lst = ['robot'] * 10
 lst += ['human'] * 10
 random.shuffle(lst)
